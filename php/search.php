@@ -11,6 +11,7 @@
 
 
 	<style >
+
 		
 				/*template styling*/
 
@@ -36,6 +37,7 @@
 		#button{
 			border-radius: 0px;
 		}
+
 
 		#container1:hover {
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
@@ -268,7 +270,7 @@
 			<div id="filterup"></div>
 
 			<div id="filter">
-				<form action="php/search.php" method="POST">
+				<form action="search.php" method="POST">
 					<div class="container-fluid1 dropdown btn1">
 
 
