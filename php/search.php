@@ -8,15 +8,255 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="searchstyle.css">
-	<link rel="stylesheet" type="text/css" href="searchbutton.css">
+
 
 	<style >
 		
+				/*template styling*/
+
+		body{
+			overflow-x: hidden;
+			overflow-y: scroll;
+			
+		}
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+			margin-left:  auto;	margin-right: auto;	border-style: solid;border-width: 1px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.details{
+			padding-top: 7px;
+		}
+
+		.contact{
+			padding-top: 7px;
+		}
+		#button{
+			border-radius: 0px;
+		}
+
 		#container1:hover {
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 		}
 
+		
+		@media  screen  and (min-width:550px){
+
+			.address{
+				width: 75%;	font-size: 20px;
+			}
+			.goto{
+				width: 25%;	font-size: 20px;
+			}
+			#container2 {
+				border-style: solid;border-width: 1px;	width: 100%;
+
+			}
+			.rent{
+				width: 30%;	padding-left: 40px;	height: 50px;
+			}
+			.details{
+				width: 40%;	text-align: center;	height: 50px;
+			}
+			.contact{
+				width: 30%;	text-align: center;	height: 50px;
+			}
+			.image{
+				width: 60%; margin-right:; height: 200px;border-style: solid;border-width: 1px;
+			}
+			.seats{
+				width: 40%;height: 200px;border-style: solid;border-width: 1px;
+		}
+
+		}
+		@media screen and (max-width: 550px){
+			#container3{
+				width: 100%;
+				order: -1;
+			}
+			.image{
+				width: 100%;height: 200px;border-style: solid;border-width: 1px;
+			}
+			.seats{
+				width: 100%;height: 30px;border-style: solid;border-width: 1px;
+			}
+			.address{
+				width: 75%;	font-size: 20px;
+			}
+			#container1{
+				width: 50%
+				order:0;
+				border-style: solid;border-width: 1px;	width: 100%;
+			}
+			#container2{
+				width: 50%;
+				order:1;
+				border-style: solid;border-width: 1px;	width: 100%;
+			}
+			.goto{
+				width: 25%;	font-size: 20px;
+			}
+			.rent{
+				width: 33.333%;height: 50px;
+			}
+			.details{
+				width: 33.333%;height: 50px;
+
+			}
+			.contact{
+				width: 33.333%;height: 50px;
+			}
+		}	
+
+		
+
+	
+		/*button style*/
+		.subfilter{
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+		.container-fluid1{
+			display: flex;
+			flex-wrap: wrap;
+
+			float: left;
+		}
+		.xyz{
+			background-color: #4CAF50; /* Green */
+			border: none;
+			color: white;
+			
+			border-radius: 0px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			
+			
+			cursor: pointer;
+			-webkit-transition-duration: 0.4s; /* Safari */
+			transition-duration: 0.4s;
+		}
+		.xyz:hover {
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		} /*start of nd width 650*/
+		@media  screen  and (max-width:650px){
+			.subfilter{
+				margin-top: 100px;
+				margin-bottom: 100px;
+
+			}
+			#filter{
+				width: 100%;
+			}
+			.btn1{
+				order: 0;
+				width: 33.33%;
+			}
+			.btn2{
+				order: 1;
+				width: 33.33%;
+
+			}
+			.btn3{
+				order: 2;
+				width: 33.33%;
+			}
+			.btn4{
+				order: 3;
+				width: 100%;
+			}
+
+			.xyz{
+				padding: 8px 8px;
+				font-size: 12px;
+				margin-left: auto;margin-right: auto; margin-top: 10px;
+
+			}
+			#submitbutton2{
+				padding: 8px;
+				margin: 10px; 
+			}
+		}
+		/*end of max width 650*/
+
+
+		/*start of min width 650*/
+		@media  screen  and (min-width:650px){
+			.subfilter{
+				margin-top: 100px;
+				margin-bottom: 100px;
+			}
+			.xyz{
+				padding: 8px 8px;
+				font-size: 18px;
+				margin: 1px 0px;
+			}
+			.btn1 , .btn2 , .btn3 , .btn4 {
+				float: left;
+				padding: 1px;
+			}
+			#submitbutton2{
+				background-color: #C44242;
+				color: white;
+				margin-top: 1px;
+				border-radius: 0;
+				text-align: center;
+				padding: 6px 8px;
+				font-size: 19px;
+			}
+			#filterup{
+				width: 15%;
+				order: 0;
+			}
+			#filter{
+				margin-left: auto;
+				margin-right: auto;
+				
+				width: 70%
+				order :1;
+				
+			}
+			#filterdown{
+				width: 15%;
+				order: 2;
+			}
+		}
+		/*end of  min width of 650*/
+		/*start of max width of  350*/
+		@media  screen  and (max-width:350px){
+			.subfilter{
+				margin-top: 100px;
+				margin-bottom: 100px;
+
+			}
+			#filter{
+				width: 100%;
+			}
+			.xyz{
+				padding: 4px 4px;
+				font-size: 8px;
+
+			}
+		}
+		/*end of  max width of 350*/
+		#submitbutton2{
+			background-color: #C44242;
+			color: white;
+
+			border-style: none; 
+			
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		
+
+
+		
 	</style>
 
 </head>

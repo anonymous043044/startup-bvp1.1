@@ -71,7 +71,10 @@ else{
 		});
 	</script>
 	<style>
-		
+		.unknown{
+			padding-top: 150px;
+			font-size: 60px;
+		}
 		/*letter drop  style*/
 		
 	</style>
@@ -109,13 +112,11 @@ else{
 	<!-- this is the input start form   -->
 	<div id="navup"><!-- this is only for navbar id -->
 		<div id="yui">
-		<h1 style="padding-left: 35px;">company name </h1>
-		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script src="letter.js"></script>
+		<h1 style="padding-left: 35px;" class="unknown">company name </h1>
+		
 		  </div>
 		<!-- filter buttons -->
-		<div class="subfilter" style="padding-top: 100px;">
+		<div class="subfilter" style="padding-top: 20px;margin-top: 20px;">
 			<div id="filterup"></div>
 
 			<div id="filter">
