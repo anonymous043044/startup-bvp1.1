@@ -2,18 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title>SignUp</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="hom.ico" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<style>
-		body{
-			overflow-x: hidden;
-      overflow-y: hidden;
+  <meta charset="utf-8" />
+  <title>SignUp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="hom.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      overflow-x: hidden;
+     
     }
     .navbar {
      margin-bottom: 0;
@@ -46,20 +46,14 @@
      margin-bottom: 10px;
    }
                .username{
-                  	font-size: 22px;
-                  	width: 80%;
-                  	padding: 12px 0px;
-                  	margin: 10px 25px;
-                  	box-sizing: border-box;
-                  	border: none;
-                  	border-bottom: 2px solid #ccc;
+                    
                   }
                   .username:focus{
-                  	outline: 0;
+                    outline: 0;
                   }
                   .box{
-                  	margin-bottom: 4%;
-                  	border: solid;
+                    margin-bottom: 4%;
+                    border: solid;
                     border-color: #58778A;
                     border-radius: 2px;
                     padding-bottom: 1%;
@@ -75,22 +69,38 @@
                   }
   
                   @media  screen  and (min-width:750px){
-                  	.box{
-                  		margin-top: 10%;
-                  		width: 40%;
-                  	}
+                    .box{
+                      margin-top: 10%;
+                      width: 40%;
+                    }
                   }
                   @media  screen  and (min-width:850px){
-                  	.box{
-                  		margin-top: 10%;
-                  		width: 33.3%;
-                  	}
+                    .box{
+                      margin-top: 10%;
+                      width: 33.3%;
+                    }
                   }
                   @media  screen  and (max-width:750px){
-                  	.box{
-                  		margin-top: 20%;
-                  	}
+                    .box{
+                      margin-top: 20%;
+                    }
                   }
+
+  form .row:first-child .form-item{border-top:1px solid #fff;}
+.form-item{position:relative;margin-bottom:10px;margin-left:15px;margin-top:10px;margin-right:25px;padding-bottom:10px;border-bottom: 2px solid #ccc;}
+.form-item input, .form-item textarea{z-index:1;position:relative;padding-right:0;
+  padding-left:0px;border:0;border-radius:0;font-size:1.5em;background:0 0;
+  box-shadow:none!important;resize:none;width:100%;}
+.form-item input:focus, .form-item textarea:focus{outline:0}
+.form-item label{display:block;z-index:0;position:relative;top:2em;
+  margin:0;font-size:.85em;line-height:1.764705882em;
+  vertical-align:middle;vertical-align:baseline;
+  opacity:0;
+  -webkit-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease;}
+.form-item-filled label{top:0;opacity:1;color:#aaa;}
+.form-item-focused label{color:#292c2f;}
+
+
                 </style>
                 <!-- navbar sccript here -->
                 <script>
@@ -152,7 +162,7 @@
            }
            else{
              if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
-              $emailERR="Invalid email id";	
+              $emailERR="Invalid email id"; 
             }
             else{
               $email=$_POST["email"];
@@ -192,7 +202,7 @@
          $sql=$conn->prepare("INSERT INTO user_details(username,user_email,user_password,user_phone_number,user_session_variable) VALUES (?,?,?,?,?)");
          $sql->execute(array($username,$email,$password,$phoneNo,2));
          $universal="Form submitted successfully check your email for a link to activate your account";
-						 //sending an email to verify
+             //sending an email to verify
          $code="this is testing of mail sending from startup-bvp website ";
          $message = "Your Activation Code is ";
          $to=$email;
@@ -211,7 +221,7 @@
           window.location = "http://localhost/startup-bvp1.1/index.php";
         </script>  
         <?php
-								//todo add email verification part
+                //todo add email verification part
       }else {
        echo "Message could not be sent...";
      }
@@ -226,12 +236,29 @@
 <?php echo $universal ; ?><br>
 <!-- forms to be styled -->
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ;?>"> 
- 
+   <div class="form-item">
+   <label for="fname">Username</label>
  <input type="text" class="username" name="username" placeholder="username" autocomplete="off"><?php echo $usernameERR; ?><br>
- 
+ </div>
+   <div class="form-item">
+   <label for="fname">Email</label>
  <input type="text" class="username" name="email" placeholder="email" autocomplete="off"><?php echo $emailERR;?><br>
+ </div>
+   <div class="form-item">
+   <label for="fname">Phone</label>
  <input type="text" class="username" name="phoneNo" placeholder="Phone Number" autocomplete="off"><?php echo $phoneNoERR;?><br>
+ </div>
+   <div class="form-item">
+   <label for="fname">Registration</label>
+ <input type="text" class="username" name="registration" placeholder="Registration Number"><?php echo $passwordERR;?><br>
+ </div>
+   <div class="form-item">
+<label for="fname">Password</label>
  <input type="password" class="username" name="password" placeholder="Password"><?php echo $passwordERR;?><br>
+ </div>
+
+   
+
  <input type="submit" class="submitbutton btn  btn-lg"  name="signup" value="Sign Up">
 </form>
 <?php  echo $username." ".$password . " ". $email." ". $phoneNo ;?>
@@ -257,6 +284,19 @@
         }
       });
     });
+  </script>
+
+  
+  <script>
+    $(function() {$("body")
+      .on("input propertychange", ".form-item",function(e) {
+        $(this).toggleClass("form-item-filled",!! $(e.target).val());})
+      .on("focus", ".form-item",function() {
+        $(this).addClass("form-item-focused");})
+      .on("blur", ".form-item",function() {
+        $(this).removeClass("form-item-focused");});
+    });
+
   </script>
 </body>
 </html>
