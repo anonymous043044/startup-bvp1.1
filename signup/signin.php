@@ -14,7 +14,7 @@
 
   <style>
     body{
-      background-color: #DCE0E0;
+      background-color: #6CEC83;
       overflow-x: hidden;
     }
     .navbar {
@@ -45,8 +45,8 @@
             .username{
                   font-size: 25px;
                   width: 80%;
-                  padding: 1px 0px;
-                  margin: 10px 5px;
+                  padding: 1px 0px 0px 0px;
+                  margin: 5px 5px 5px 5px;
                   box-sizing: border-box;
                   border: none;
                   border-bottom: 2px solid #ccc;
@@ -54,13 +54,29 @@
             .username:focus{
               outline: 0; 
             }
+             .password{
+                  font-size: 25px;
+                  width: 80%;
+                  padding: 1px 0px 0px 0px;
+                  margin: 0px 5px 5px 5px;
+                  box-sizing: border-box;
+                  border: none;
+                  border-bottom: 2px solid #ccc;
+            }
+            .password:focus{
+              outline: 0; 
+            }
             .submitbutton{
                   margin-left: 20px;
                   margin-bottom: 10px;
+                  border-radius: 2px;
+                  background-color: #6CEC83;
             }
             .box{
                   margin-top: 3%;
                   border: solid;
+                  border-width: 2px;
+
                   border-color: #292c2f;
                   border-radius: 0px;
                   padding-bottom: 10px;
@@ -76,6 +92,7 @@
               width: 33.3%;
                   border: solid;
                   border-radius: 0px;
+                  border-width: 2px;
                   margin-top:  10px;
                   border-color: #292c2f;
                   background-color: white;
@@ -112,24 +129,19 @@
 
              form .row:first-child .form-item{border-top:1px solid #fff;
 }
-.form-item{position:relative;margin-bottom:0px;padding-bottom:0px;border-bottom:1px solid #bbb;
+.form-item{position:relative;margin-bottom:0px;margin-left:20px;margin-top:10px;margin-right:30px;padding-bottom:10px;border-bottom:2px solid #ccc;
 }
 .form-item input, .form-item textarea{z-index:1;position:relative;padding-right:0;
-  padding-left:0;border:0;border-radius:0;font-size:1.5em;background:0 0;
-  box-shadow:none!important;resize:none;width:100%;
-}
-.form-item input:focus, .form-item textarea:focus{outline:0
-}
+  padding-left:0px;border:0;border-radius:0;font-size:1.5em;background:0 0;
+  box-shadow:none!important;resize:none;width:100%;}
+.form-item input:focus, .form-item textarea:focus{outline:0}
 .form-item label{display:block;z-index:0;position:relative;top:2em;
   margin:0;font-size:.85em;line-height:1.764705882em;
   vertical-align:middle;vertical-align:baseline;
   opacity:0;
-  -webkit-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease;
-}
-.form-item-filled label{top:0;opacity:1;color:#aaa;
-}
-.form-item-focused label{color:#292c2f;
-}
+  -webkit-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease;}
+.form-item-filled label{top:0;opacity:1;color:#aaa;}
+.form-item-focused label{color:#292c2f;}
 
 
 </style>
@@ -279,7 +291,7 @@ echo '
      </div><br>
      <div class="form-item">
      <label for="fname">Password</label>
-     <input type="password" class="username" name="Password" placeholder="Enter password" value="">'.$PasswordERR.'
+     <input type="password" class="password" name="Password" placeholder="Enter password" value="">'.$PasswordERR.'
      </div><br><br>
      <input type="submit" class="submitbutton btn btn-success btn-lg" name="Submit">
    </form>
@@ -292,9 +304,9 @@ echo '
 <div class="row container-fluid">
   <div class="col-sm-4">
   </div>
-  <div class="col-sm-4 box1" style="float: left;">
+  <div class="col-sm-4 box1 text-center" style="float: left;">
     <form method="POST" action="../php/signup.php">
-     <span>&nbsp;&nbsp;Create account here :-</span>
+     <span>Click Here</span>
      <a href="http://localhost/startup-bvp1.1/php/signup.php" style="text-decoration: none;">&nbsp;  &nbsp;  New Users</a>
    </form>
  </div>
