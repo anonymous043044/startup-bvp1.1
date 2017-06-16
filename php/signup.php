@@ -45,55 +45,7 @@
      margin-left: 20px;
      margin-bottom: 10px;
    }
-/*
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>SignUp</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" type="image/x-icon" href="hom.ico" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      
-		<style>
-			 body{
-                  overflow-x: hidden;
-            }
-             .navbar {
-    margin-bottom: 0;
-   
-    background-color: black;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-weight: bold;
-}
-.navbar li a, .navbar .navbar-brand {
-   
-    color: #fff !important;
-}
-.navbar-nav li a:hover, .navbar-nav li.active a {
-   // color: #6F1EF4 !important;
-    color: black !important;
-    background-color: #FCFAFF !important;
-    font-size: 16px;
-}
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-}
-			.submitbutton{
-				  margin-top: 20px;
-                  margin-left: 20px;
-                  margin-bottom: 10px;
-                  */
-                  .username{
+               .username{
                   	font-size: 22px;
                   	width: 80%;
                   	padding: 12px 0px;
@@ -182,7 +134,7 @@
           <div class="col-sm-4">
 
           </div>
-          <div class="box col-sm-4">
+          <div class="box col-sm-4 slideanim">
            <?php 
            require 'connToDB.php';
            $universal="";
@@ -291,5 +243,20 @@
 <!-- navbar start -->
 
 <!-- navbar ended -->
+<script src="jquery.counterup.min.js"></script> 
+<script>
+
+    $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+      });
+    });
+  </script>
 </body>
 </html>

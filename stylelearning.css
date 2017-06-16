@@ -36,6 +36,9 @@ body{
 }
 /*this is filter content */
 
+
+
+
 .box{
     margin-top: 50px;
    overflow-x: hidden !important;
@@ -108,6 +111,7 @@ body{
       color: #292c2f;
       font-size: 100px;
   }
+/*contact input part*/
   input[type=submit]{
     width: 80px;
     margin: 20px 0px 30px 0px;
@@ -147,11 +151,17 @@ form .row:first-child .form-item{border-top:1px solid #fff;
 }
 .form-item{position:relative;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #bbb;
 }
-.form-item input, .form-item textarea{z-index:1;position:relative;padding-right:0;padding-left:0;border:0;border-radius:0;font-size:1.5em;background:0 0;box-shadow:none!important;resize:none;width:100%;
+.form-item input, .form-item textarea{z-index:1;position:relative;padding-right:0;
+  padding-left:0;border:0;border-radius:0;font-size:1.5em;background:0 0;
+  box-shadow:none!important;resize:none;width:100%;
 }
 .form-item input:focus, .form-item textarea:focus{outline:0
 }
-.form-item label{display:block;z-index:0;position:relative;top:2em;margin:0;font-size:.85em;line-height:1.764705882em;vertical-align:middle;vertical-align:baseline;opacity:0;-webkit-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease;
+.form-item label{display:block;z-index:0;position:relative;top:2em;
+  margin:0;font-size:.85em;line-height:1.764705882em;
+  vertical-align:middle;vertical-align:baseline;
+  opacity:0;
+  -webkit-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease;
 }
 .form-item-filled label{top:0;opacity:1;color:#aaa;
 }
@@ -172,7 +182,8 @@ form .row:first-child .form-item{border-top:1px solid #fff;
     visibility: visible; 
 }
 
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+/* Go from 0% to 100% opacity (see-through) and specify the percentage
+ from when to slide in the element along the Y-axis */
 @keyframes slide {
     0% {
         opacity: 0;
