@@ -1,0 +1,43 @@
+	#about_font{
+  font-size: 20px;
+  font-weight: bold;
+  /*font-family: 'Architects Daughter', cursive;*/
+/*font-family: 'Chewy', cursive;*/
+/*font-family: 'Finger Paint', cursive;*/
+/*font-family: 'Indie Flower', cursive;*/
+/*font-family: 'Mogra', cursive;*/
+/*font-family: 'Pacifico', cursive*/;
+  font-family: 'Pangolin', cursive;
+
+}
+#about_heading{
+	font-size: 40px;
+	font-family: 'Mogra', cursive;
+}
+
+#make_differ_text{
+  text-align: center; font-size: 40px; color: black; 
+ font-family: 'Mogra', cursive;
+  
+/*this is the js where no are  starting inc*/
+}
+ #testimonal_text{
+ 	font-family: 'Pangolin', cursive;
+ 	font-size: 20px;
+ 	font-weight: bold;
+
+}
+
+#differ_text{
+   text-align: center; 
+   font-size: 150%; 
+   color: black;
+   font-weight: bold;
+  font-family: 'Crimson Text', serif;
+}
+
+#use_this{
+	font-family: 'Crimson Text', serif;
+	font-size: 25px;
+	font-weight: bold;
+}
