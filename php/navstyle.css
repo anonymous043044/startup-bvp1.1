@@ -1,0 +1,249 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.navbar {
+    margin-bottom: 0;
+    /* background-color: #292c2f;*/
+    background-color: #292c2f;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.navbar li a, .navbar .navbar-brand {
+
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+ /* color: #6F1EF4 !important;*/
+ color: #292c2f !important;
+ background-color: #FCFAFF !important;
+ font-size: 16px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+
+.subfilter{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container-fluid1{
+    display: flex;
+    flex-wrap: wrap;
+
+    float: left;
+}
+.xyz{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+
+    border-radius: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.xyz:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    } /*start of nd width 650*/
+    @media  screen  and (max-width:650px){
+        .subfilter{
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+        }
+        #filter{
+            width: 100%;
+        }
+        .btn1{
+            order: 0;
+            width: 33.33%;
+        }
+        .btn2{
+            order: 1;
+            width: 33.33%;
+
+        }
+        .btn3{
+            order: 2;
+            width: 33.33%;
+        }
+        .btn4{
+            order: 3;
+            width: 100%;
+        }
+
+        .xyz{
+            padding: 8px 8px;
+            font-size: 12px;
+            margin-left: auto;margin-right: auto; margin-top: 10px;
+
+        }
+        #submitbutton2{
+            padding: 8px;
+            margin-top: 10px; 
+        }
+    }
+    /*end of max width 650*/
+
+
+    /*start of min width 650*/
+    @media  screen  and (min-width:650px){
+        .subfilter{
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .xyz{
+            padding: 8px 8px;
+            font-size: 18px;
+            margin: 1px 0px;
+        }
+        .btn1 , .btn2 , .btn3 , .btn4 {
+            float: left;
+            padding: 1px;
+        }
+        #submitbutton2{
+            background-color: #C44242;
+            color: white;
+            margin-top: 1px;
+            border-radius: 0;
+            text-align: center;
+            padding: 6px 8px;
+            font-size: 19px;
+        }
+        #filterup{
+            width: 15%;
+            order: 0;
+        }
+        #filter{
+            margin-left: auto;
+            margin-right: auto;
+
+            width: 70%
+            order :1;
+
+        }
+        #filterdown{
+            width: 15%;
+            order: 2;
+        }
+    }
+    /*end of  min width of 650*/
+    /*start of max width of  350*/
+    @media  screen  and (max-width:350px){
+        .subfilter{
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+        }
+        #filter{
+            width: 100%;
+        }
+        .xyz{
+            padding: 4px 4px;
+            font-size: 8px;
+
+        }
+    }
+    /*end of  max width of 350*/
+    #submitbutton2{
+        background-color: #C44242;
+        color: white;
+
+        border-style: none; 
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   
+
+
+    
+    /*results begin  heree*/
+
+#results{
+    display: flex;
+        flex-wrap: wrap;
+        margin: 30px;
+}
+@media  screen  and (min-width:750px){
+    #containerup{
+        order: 0;
+        width: 25%;
+    }
+    #container1{
+        order: 1;
+        width: 50%;
+    }
+    #containerdown{
+        order: 2;
+        width: 25%;
+    }
+}
+@media  screen  and (min-width:400px){
+
+   #containerup{
+        order: 0;
+        width: 10%;
+    }
+    #container1{
+        order: 1;
+        width: 80%;
+    }
+    #containerdown{
+        order: 2;
+        width: 10%;
+    }
+}
+@media screen and (max-width:400px){
+    #container1{
+        width: 100%;
+    }
+}
+
+    #container1{
+        display: flex;
+        flex-wrap: wrap;
+         border-style: solid;border-width: 1px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+ 
+   
+    #container1:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+#firstbox{
+    display: flex;
+        flex-wrap: wrap;
+}
+#address{
+    order: 0;
+    width: 90%;
+}
+#goto{
+    order: 1;
+    width: 10%;
+}
+
+    
