@@ -1,0 +1,54 @@
+.navbar {
+    margin-bottom: 0;
+    /* background-color: #292c2f;*/
+    background-color: #292c2f;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.navbar li a, .navbar .navbar-brand {
+
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+ /* color: #6F1EF4 !important;*/
+ color: #292c2f !important;
+ background-color: #FCFAFF !important;
+ font-size: 16px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+#main{
+	margin-top: 50px;
+}
+
+.heading{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: red;
+
+}
+@media  screen  and (min-width:650px){
+	
+	#rent{
+		order: 0;
+		width: 20%;
+	}
+	#address{
+		order: 1;
+		width: 60%;
+	}
+	#goto{
+		order: 2;
+		width: 20%;
+	}
+}

@@ -24,7 +24,7 @@
 
 
 
-		.container{
+		#container1{
 			display: flex;
 			flex-wrap: wrap;
 			margin-left:  auto;	margin-right: auto;	border-style: solid;border-width: 1px;
@@ -420,6 +420,8 @@
 
 
 ?>
+
+
 
 
 </body>
