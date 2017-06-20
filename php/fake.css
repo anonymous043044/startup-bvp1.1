@@ -1,0 +1,157 @@
+.navbar {
+    margin-bottom: 0;
+    /* background-color: #292c2f;*/
+    background-color: #292c2f;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.navbar li a, .navbar .navbar-brand {
+
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+ /* color: #6F1EF4 !important;*/
+ color: #292c2f !important;
+ background-color: #FCFAFF !important;
+ font-size: 16px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+#main{
+	margin-top: 60px;
+}
+
+#heading{
+	display: flex;
+	flex-wrap: wrap;
+/*	background-color: red;*/
+
+}
+@media  screen  and (min-width:650px){
+	
+	#rent{
+		order: 0;
+		width: 20%;
+
+	}
+	#address{
+		order: 1;
+		width: 60%;
+	}
+	#goto{
+		order: 2;
+		width: 20%;
+	}
+}
+@media  screen  and (max-width:650px){
+
+	#rent{
+		order: 0;
+		width: 100%;
+	}
+	#address{
+		order: 1;
+		width: 70%;
+	}
+	#goto{
+		order: 2;
+		width: 30%;
+
+	}
+}
+#image_info{
+	border: solid;
+	display: flex;
+	flex-wrap: wrap;
+}
+@media  screen  and (min-width:750px){
+	#images{
+		order: 0;
+		width: 60%;
+
+	}
+	#details{
+		order: 1;
+		width: 40%;
+	}
+}
+#images{
+
+	display: flex;
+	flex-wrap: wrap;
+}
+@media  screen  and (min-width:750px){
+	#image1{
+		order: 0;
+		width: 50%;
+		
+	}
+	#image2{
+		order: 1;
+		width: 50%;
+	
+	}
+	
+	#image3{
+		order: 2;
+		width: 50%;
+		
+	}
+	#image4{
+		order: 3;
+		width: 50%;
+		
+	}
+
+}
+@media  screen  and (min-width:1000px){
+	#image1{
+		padding-left: 20px;
+		padding-bottom: 10px;
+	}
+	#image2{
+			padding-right: 20px;
+		padding-bottom: 10px;
+	}
+	#image3{
+		padding-left: 20px;
+	}
+	#image4{
+		padding-right: 20px;
+	}
+
+}
+
+form .row:first-child .form-item{border-top:1px solid #fff;
+}
+.form-item{position:relative;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #bbb;
+}
+.form-item input, .form-item textarea{z-index:1;position:relative;padding-right:0;
+  padding-left:0;border:0;border-radius:0;font-size:1.5em;background:0 0;
+  box-shadow:none!important;resize:none;width:100%;
+}
+.form-item input:focus, .form-item textarea:focus{outline:0
+}
+.form-item label{display:block;z-index:0;position:relative;top:2em;
+  margin:0;font-size:.85em;line-height:1.764705882em;
+  vertical-align:middle;vertical-align:baseline;
+  opacity:0;
+  -webkit-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease;
+}
+.form-item-filled label{top:0;opacity:1;color:#aaa;
+}
+.form-item-focused label{color:#292c2f;
+}
+
+
+
